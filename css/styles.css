@@ -28,7 +28,7 @@ h3 {
 
 h2,
 h3 {
-  margin-top: 0;
+  margin: 0;
 }
 
 a {
@@ -39,19 +39,16 @@ img {
   width: 100%;
 }
 
-.portafolio h2,
-h3 {
-  text-align: center;
-}
-
 /* ----------BASE LAYOUT STYLES--------------- */
 
 /* Navigation */
 
 .name {
-  font-size: 2.2em;
+  font-size: 1.7em;
   margin: 0;
+  text-align: center;
 }
+
 .main-nav {
   margin-top: 10px;
 }
@@ -75,13 +72,13 @@ h3 {
 
 .intro,
 .name a {
-  background: #e6e6e6;
+  background: #f1f1f1;
 }
 
 .profile {
-  width: 50%;
+  width: 70%;
   display: block;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 
 /* Layout Containers */
@@ -91,11 +88,209 @@ h3 {
   padding-bottom: 0.5em;
 }
 
-.main-footer {
+.main-footer,
+.about-me {
   text-align: center;
 }
 
 .container {
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.portafolio h2,
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.portafolio h2 {
+  padding-bottom: 1.6em;
+}
+
+.portafolio h3 {
+  padding-top: 0.8em;
+}
+
+.portafolio p {
+  text-align: center;
+  padding: 0px 1em;
+}
+
+.main-footer {
+  background: #f1f1f1;
+}
+
+.main-footer h2 {
+  padding: 3em 0 0.8em 0;
+}
+
+.information {
+  padding-bottom: 2em;
+}
+
+.information p {
+  margin: 10px 0;
+}
+
+.information strong {
+  margin-left: 0.3em;
+}
+
+.foot {
+  overflow: hidden;
+  padding: 1.4em 0;
+  border-top: 1px solid #d0d0d0;
+}
+
+.rightFoot a {
+  color: #4a4a4a;
+}
+
+.leftFoot {
+  width: 50%;
+  float: left;
+  text-align: left;
+  font-size: 1em;
+}
+
+.rightFoot {
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-size: 1em;
+}
+
+.linksFoot {
+  display: none;
+}
+
+/* ----------MEDIA QUERIES--------------- */
+
+@media (min-width: 768px) {
+  /* body {
+    background-color: red;
+  } */
+
+  .container {
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+  }
+
+  .main-nav {
+    text-align: center;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin: 0 0.5em;
+  }
+
+  .main-nav a {
+    background: #f1f1f1;
+  }
+
+  .profile {
+    float: right;
+    width: 35%;
+    margin: 0 0 0 20px;
+  }
+
+  .about-me {
+    padding-bottom: 3em;
+    text-align: left;
+  }
+
+  .portafolio {
+    padding-top: 2.5em;
+  }
+
+  .project {
+    float: left;
+    width: 50%;
+    padding: 0.4em;
+  }
+
+  .main-footer h2 {
+    padding-top: 1.5em;
+  }
+
+  .main-footer p {
+    width: 80%;
+    margin: 1.5em auto;
+  }
+
+  .information p {
+    margin: 0.8em auto;
+  }
+
+  .rightFoot {
+    display: none;
+  }
+
+  .linksFoot {
+    display: block;
+  }
+
+  .foot-nav {
+    float: right;
+  }
+
+  .foot-nav li {
+    display: inline-block;
+  }
+
+  .foot-nav a {
+    color: #4a4a4a;
+    padding: 0 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .foot {
+    padding: 1em 0 3em;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    text-align: right;
+  }
+
+  .project {
+    padding: 0 0.5em;
+  }
+
+  .project {
+    width: 33.33%;
+  }
+
+  .about-me p {
+    font-size: 1.5em;
+  }
+
+  .main-footer p {
+    width: 60%;
+  }
+
+  .foot {
+    padding: 1em 0 1.5em;
+  }
 }
