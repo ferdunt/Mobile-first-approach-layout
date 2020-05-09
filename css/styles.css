@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Ubuntu Condensed", arial;
+  font-family: "Ubuntu Condensed", sans-serif, arial;
   line-height: 1.6;
   color: #7f7f7f;
 }
@@ -70,6 +70,12 @@ img {
   margin-bottom: 0.3em;
 }
 
+.main-nav a:hover,
+.foot-nav a:hover,
+.rightFoot a:hover {
+  color: #afafaf;
+}
+
 .intro,
 .name a {
   background: #f1f1f1;
@@ -99,13 +105,16 @@ img {
 }
 
 .portafolio h2,
+.skills h2,
 h3 {
   text-align: center;
   font-size: 1.5em;
 }
 
-.portafolio h2 {
-  padding-bottom: 1.6em;
+.portafolio h2,
+.skills h2 {
+  margin-bottom: 1.6em;
+  background: #f1f1f1;
 }
 
 .portafolio h3 {
@@ -115,6 +124,10 @@ h3 {
 .portafolio p {
   text-align: center;
   padding: 0px 1em;
+}
+
+.project h3 {
+  color: #d07a67;
 }
 
 .main-footer {
@@ -165,6 +178,19 @@ h3 {
   display: none;
 }
 
+.skills p {
+  text-align: center;
+}
+
+.languages img {
+  width: 60px;
+  margin: 30px 12px;
+}
+
+.languages {
+  text-align: center;
+}
+
 /* ----------MEDIA QUERIES--------------- */
 
 @media (min-width: 768px) {
@@ -190,6 +216,10 @@ h3 {
     background: #f1f1f1;
   }
 
+  .main-header {
+    box-shadow: -11px 27px 12px -31px rgba(0, 0, 0, 0.8);
+  }
+
   .profile {
     float: right;
     width: 35%;
@@ -197,6 +227,7 @@ h3 {
   }
 
   .about-me {
+    margin-top: 3em;
     padding-bottom: 3em;
     text-align: left;
   }
@@ -274,12 +305,20 @@ h3 {
     text-align: right;
   }
 
+  .main-header {
+    box-shadow: -11px 21px 14px -25px rgba(0, 0, 0, 0.8);
+  }
+
   .project {
     padding: 0 0.5em;
   }
 
   .project {
     width: 33.33%;
+  }
+
+  .skills h2 {
+    margin-top: 2em;
   }
 
   .about-me p {
